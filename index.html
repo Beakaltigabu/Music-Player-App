@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Music App</title>
+</head>
+<body>
+    <div class="phone-frame">
+    <div class="wrapper">
+        <header>
+            <button class="hdbtn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <h3 class="p-now">Playing now</h3>
+            <button class="hdbtn">
+                <i class="fa-solid fa-list"></i>
+            </button>
+        </header>
+
+
+
+
+        <div class="player">
+            <div class="img-area">
+                <img src="assets/images/01.jpg" alt="">
+            </div>
+
+            <div class="song-details">
+                <h1 class="name">Animation</h1>
+                <h3 class="artist">Coding</h3>
+            </div>
+
+            <div class="audioC">
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio src="assets/songs/01.mp3" id="main-audio"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btnC" id="prev">
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fi fi-sr-rewind"></i>
+                </button>
+                <button class="play-pause btnC" >
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fi fi-sr-play"></i>
+                </button>
+                <button class="btnC" id="next">
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fi fi-sr-forward"></i>
+                </button>
+            </div>
+            <div class="volume-control">
+                <i class="fa-solid fa-volume-down volume-icon-end"></i>
+
+                <input type="range" class="volume-range btnC" min="0" max="100" value="50">
+
+                <i class="fa-solid fa-volume-up  volume-icon-start"></i>
+              </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
